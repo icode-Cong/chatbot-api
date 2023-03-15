@@ -20,7 +20,7 @@ public class ApiTest {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
         HttpGet get = new HttpGet("https://api.zsxq.com/v2/groups/28885518425541/topics?scope=all&count=20");
-        get.addHeader("cookie", "zsxq_access_token=FFE09FBD-82FE-B05D-C797-423712B343AB_810D8A0B4911C8BD; abtest_env=beta; zsxqsessionid=db16dc73c7bb1d22db209b42f3a704f0");
+        get.addHeader("cookie", "zsxq_access_token=FFE09FBD-82FE-B05D-C797-423712B343AB_810D8A0B4911C8BD; zsxqsessionid=db16dc73c7bb1d22db209b42f3a704f0; abtest_env=beta");
         get.addHeader("Content-Type", "application/json; charset=UTF-8");
 
         CloseableHttpResponse response = httpClient.execute(get);
