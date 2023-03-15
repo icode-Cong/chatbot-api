@@ -4,3 +4,4 @@ server:
 chatbot-api:
   groupId: 28885518425541
   cookie: //自己的cookie
+  openAiKey: //自己的openAiKey
